@@ -1,0 +1,21 @@
+{
+  "name": "auth0-nodejs-poc",
+  "version": "1.0.0",
+  "description": "Auth0 NodeJS PoC",
+  "main": "index.js",
+  "repository": "git@github.com:duffj/auth0-nodejs-poc.git",
+  "author": "duffj",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-openid-connect": "0.6.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
