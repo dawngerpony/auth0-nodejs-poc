@@ -24,9 +24,10 @@ Auth0 NodeJS proof of concept
 
 ## How to run this yourself
 
-### Prerequisites
+Prerequisites: node, yarn, mkcert, nss
 
-1. yarn
+    yarn install
+    yarn start
 
 ## Testing
 
