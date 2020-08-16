@@ -6,7 +6,7 @@ Auth0 NodeJS proof of concept
 
 1. Sign up for a free account at Auth0
 1. Create a new server application (NodeJS/Express)
-1. Callback URL: http://localhost:3000 (default)
+1. Callback URL: [http://localhost:3000](http://localhost:3000) (default)
 1. Create a new local cert = `localhost-key.pem` with a key = `localhost.pem`:
 
     brew install mkcert nss
@@ -41,11 +41,11 @@ Prerequisites: node, yarn, mkcert, nss, an Auth0 account.
 
 ## Testing
 
-1. Visit http://localhost:3000
+1. Visit [localhost:3000](http://localhost:3000)
 
         No cookies, displays "logged out"
 
-1. Visit http://localhost:3000/login
+1. Visit [/login](http://localhost:3000/login)
 
         Redirected to ISSUER_BASE_URL with URL parameters state, client, protocol, scope, response_type, redirect_uri, nonce, response_mode
         Cookies: _csrf, auth0_compat, auth0 (session cookie), did_compat, did (device ID)
@@ -57,8 +57,9 @@ Prerequisites: node, yarn, mkcert, nss, an Auth0 account.
 
 ## References
 
-- https://github.com/FiloSottile/mkcert
-- https://nodejs.dev/how-to-read-environment-variables-from-nodejs
-- https://stackabuse.com/managing-environment-variables-in-node-js-with-dotenv/
-- https://auth0.com/docs/sessions/concepts/cookie-attributes
-- https://auth0.com/docs/tokens/references/id-token-structure
+- [mkcert](https://mkcert.dev)
+- [How to read environment variables from Node.js](https://nodejs.dev/how-to-read-environment-variables-from-nodejs)
+- [Managing Environment Variables in Node.js with dotenv](https://stackabuse.com/managing-environment-variables-in-node-js-with-dotenv/)
+- [sameSite Cookie Attribute Changes](https://auth0.com/docs/sessions/concepts/cookie-attributes)
+- [ID Token Structure](https://auth0.com/docs/tokens/references/id-token-structure)
+- [GitHub Action for Yarn](https://github.com/marketplace/actions/github-action-for-yarn)
