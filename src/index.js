@@ -1,7 +1,7 @@
-import express from 'express';
-import { createServer } from 'https';
-import { readFileSync } from 'fs';
-import { auth, requiresAuth } from 'express-openid-connect';
+const express = require('express');
+const { createServer } = require('https');
+const { readFileSync } = require('fs');
+const { auth, requiresAuth } = require('express-openid-connect');
 
 require('dotenv').config();
 
@@ -11,7 +11,9 @@ const config = {
   baseURL: 'https://localhost:3000',
   issuerBaseURL: process.env.ISSUER_BASE_URL,
   clientID: process.env.CLIENT_ID,
-  appSessionSecret: process.env.APP_SESSION_SECRET,
+  appSession: {
+    secret: process.env.APP_SESSION_SECRET,
+  },
 };
 
 const key = readFileSync('./localhost-key.pem');

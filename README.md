@@ -61,5 +61,10 @@ Prerequisites: node, yarn, mkcert, nss, an Auth0 account.
 - [How to read environment variables from Node.js](https://nodejs.dev/how-to-read-environment-variables-from-nodejs)
 - [Managing Environment Variables in Node.js with dotenv](https://stackabuse.com/managing-environment-variables-in-node-js-with-dotenv/)
 - [sameSite Cookie Attribute Changes](https://auth0.com/docs/sessions/concepts/cookie-attributes)
+
+### Auth0 docs
+
 - [ID Token Structure](https://auth0.com/docs/tokens/references/id-token-structure)
 - [GitHub Action for Yarn](https://github.com/marketplace/actions/github-action-for-yarn)
+- [Express](https://auth0.com/docs/quickstart/webapp/express)
+- [Node.js](https://auth0.com/docs/quickstart/webapp/nodejs/01-login)
