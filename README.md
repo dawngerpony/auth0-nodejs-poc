@@ -24,10 +24,20 @@ Auth0 NodeJS proof of concept
 
 ## How to run this yourself
 
-Prerequisites: node, yarn, mkcert, nss
+Prerequisites: node, yarn, mkcert, nss, an Auth0 account.
 
-    yarn install
-    yarn start
+1. Make certificates
+1. Create an Auth0 account
+1. Create a `.env` file:
+
+        APP_SESSION_SECRET=<secret>
+        CLIENT_ID=<client id>
+        ISSUER_BASE_URL=<base url>
+
+1. Run yarn:
+
+        yarn install
+        yarn start
 
 ## Testing
 
