@@ -55,6 +55,13 @@ Prerequisites: node, yarn, mkcert, nss, an Auth0 account.
         Redirected back to `baseURL`
         Cookies: `identity`
 
+## Local commands
+
+- `yarn libyear`: run the [libyear](https://www.libyear.com/) command to determine dependency age
+- `yarn lint`: run eslint to report on code issues
+- `yarn start`: run the server
+- `yarn start:dev`: run the server in dev mode under `nodemon` for hot reloads
+
 ## References
 
 - [mkcert](https://mkcert.dev)
